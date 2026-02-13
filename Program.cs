@@ -15,5 +15,13 @@ Console.WriteLine("\nA sua primeira nota é: " + nota1 + "\nA sua segunda nota �
 double soma = nota1 + nota2 + nota3;
 double media = soma / 3;
 
-Console.WriteLine("\nA sua média final é: " + media);
+Console.WriteLine("\nA sua média final é: " + $"{media:F2}");
+#endregion
+
+#region 2.  Conversor de Idade
+Console.Write("Digite a sua idade: ");
+int idadeUsuario = Convert.ToInt32(Console.ReadLine());
+
+int diasIdade = idadeUsuario * 365;
+Console.WriteLine("Os dias são: " + diasIdade);
 #endregion
