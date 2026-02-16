@@ -44,6 +44,16 @@ Console.WriteLine("\nOs valores trocados são: \nA - " + a + "\nB - " + b);
 
 //Nível 2: Estruturas Condicionais (if, else if, else)
 #region 1. Verificador de Maioridade
+Console.Write("Digite a sua idade: ");
+int idade = Convert.ToInt32(Console.ReadLine());
+
+if (idade >= 18)
+{
+    Console.WriteLine("Entrada autorizada.");
+}
+else {
+    Console.WriteLine("Entrada não autorizada. Menor de idade.");
+}
 #endregion
 
 #region 2. Classificador de Número
