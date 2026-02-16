@@ -94,7 +94,7 @@ else {
 
 //Nível 3: Estruturas de Repetição (Loops)
 #region 1. Contagem Regressiva
-Console.WriteLine("Aperte Enter para iniciar a contagem regreciva.");
+Console.WriteLine("Aperte Enter para iniciar a contagem regressiva.");
 Console.Read();
 
 for (int i = 10; i >= 1; i--) {
@@ -106,6 +106,28 @@ Console.WriteLine("\nLançar!");
 #endregion
 
 #region 2. Soma de Ímpares (Loop while)
+int somaNumero = 0;
+int numeroInteiro = - 1;
+
+while (numeroInteiro != 0) {
+    Console.Write("Digite um número inteiro (0 para sair): ");
+    numeroInteiro = Convert.ToInt32(Console.ReadLine());
+    if (numeroInteiro == 0)
+    {
+        Console.WriteLine("\nSaindo...");
+    }
+    else if (numeroInteiro % 2 != 0) 
+    {
+        somaNumero = somaNumero + numeroInteiro;
+        Console.WriteLine("\nEste número é ímpar.");
+    }
+    else
+    {
+        Console.WriteLine("\nEste número não é ímpar.");
+    }
+}
+
+Console.WriteLine("\nA soma total dos ímpares é: " +  somaNumero);
 #endregion
 
 #region 3. Tabuada Personalizada
