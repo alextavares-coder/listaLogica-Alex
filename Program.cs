@@ -92,11 +92,17 @@ else {
 }
 #endregion
 
-////Nível 3: Estruturas de Repetição (Loops)
+//Nível 3: Estruturas de Repetição (Loops)
 #region 1. Contagem Regressiva
+Console.WriteLine("Aperte Enter para iniciar a contagem regreciva.");
+Console.Read();
 
+for (int i = 10; i >= 1; i--) {
+    Console.WriteLine(i);
+    Thread.Sleep(3000);
+}
 
-
+Console.WriteLine("\nLançar!");
 #endregion
 
 #region 2. Soma de Ímpares (Loop while)
