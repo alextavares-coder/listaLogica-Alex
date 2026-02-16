@@ -57,6 +57,21 @@ else {
 #endregion
 
 #region 2. Classificador de Número
+Console.Write("Digite um número: ");
+int numero = Convert.ToInt32(Console.ReadLine());
+
+if (numero == 0) {
+    Console.WriteLine("\nZero.");
+}
+else if (numero > 0 && numero % 2 == 0) {
+    Console.WriteLine("\nPar e positivo.");
+}
+else if (numero > 0 && numero % 2 != 0) {
+    Console.WriteLine("\nÍmpar e positivo.");
+}
+else {
+    Console.WriteLine("\nNegativo.");
+}
 #endregion
 
 #region 3. Validação de Login Simples
