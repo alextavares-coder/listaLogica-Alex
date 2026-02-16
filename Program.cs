@@ -75,10 +75,28 @@ else {
 #endregion
 
 #region 3. Validação de Login Simples
+string usuarioCorreto = "admin";
+int senhaCorreta = 12345;
+
+Console.Write("Digite o nome do seu Usuário: ");
+string usuario = Console.ReadLine();
+
+Console.Write("Digite a sua senha: ");
+int senha = Convert.ToInt32(Console.ReadLine());
+
+if (usuario == usuarioCorreto && senha == senhaCorreta) {
+    Console.WriteLine("\nLogin efetuado com sucesso!");
+}
+else {
+    Console.WriteLine("\nUsuário ou senha inválidos.");
+}
 #endregion
 
 ////Nível 3: Estruturas de Repetição (Loops)
 #region 1. Contagem Regressiva
+
+
+
 #endregion
 
 #region 2. Soma de Ímpares (Loop while)
