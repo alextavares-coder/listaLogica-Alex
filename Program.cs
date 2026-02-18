@@ -132,20 +132,35 @@
 //#endregion
 
 #region 3. Tabuada Personalizada
-Console.Write("Digite um número da tabuada: ");
-int tabuadaNumero = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Digite um número da tabuada: ");
+//int tabuadaNumero = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("\nTabuada de Multiplicação.\n");
-Console.WriteLine($"\nTabuada do {tabuadaNumero}:\n");
+//Console.WriteLine("\nTabuada de Multiplicação.\n");
+//Console.WriteLine($"\nTabuada do {tabuadaNumero}:\n");
 
-for (int i = 1; i <= 10; i++) {
-    int multTabuada = tabuadaNumero * i;
-    Console.WriteLine($"{tabuadaNumero} X {i} = {multTabuada}");
-}
+//for (int i = 1; i <= 10; i++) {
+//    int multTabuada = tabuadaNumero * i;
+//    Console.WriteLine($"{tabuadaNumero} X {i} = {multTabuada}");
+//}
 #endregion
 
 //Nível 4: Coleções (Arrays e Listas)
 #region 1. Inversão de Array
+string[] nomes = {"Alex", "Lariza", "Maria", "João", "Henrique"};
+
+Console.WriteLine("\nLista de nomes original:\n");
+
+foreach (string nome in nomes)
+{
+    Console.WriteLine(nome);
+}
+
+Console.WriteLine("\nLista de nomes na Ordem Inversa:\n");
+Array.Reverse(nomes);
+
+foreach (string nome in nomes) {
+    Console.WriteLine(nome);
+}
 #endregion
 
 #region 2. Busca e Contagem em Lista (foreach)
