@@ -146,24 +146,64 @@
 
 //Nível 4: Coleções (Arrays e Listas)
 #region 1. Inversão de Array
-string[] nomes = {"Alex", "Lariza", "Maria", "João", "Henrique"};
+//string[] nomes = {"Alex", "Lariza", "Maria", "João", "Henrique"};
 
-Console.WriteLine("\nLista de nomes original:\n");
+//Console.WriteLine("\nLista de nomes original:\n");
 
-foreach (string nome in nomes)
-{
-    Console.WriteLine(nome);
-}
+//foreach (string nome in nomes)
+//{
+//    Console.WriteLine(nome);
+//}
 
-Console.WriteLine("\nLista de nomes na Ordem Inversa:\n");
-Array.Reverse(nomes);
+//Console.WriteLine("\nLista de nomes na Ordem Inversa:\n");
+//Array.Reverse(nomes);
 
-foreach (string nome in nomes) {
-    Console.WriteLine(nome);
-}
+//foreach (string nome in nomes) {
+//    Console.WriteLine(nome);
+//}
 #endregion
 
 #region 2. Busca e Contagem em Lista (foreach)
+List<string> nomesCores = new List<string>();
+
+Console.WriteLine("Umas listas de cores.");
+Console.WriteLine("\nAs cores são:\n");
+
+nomesCores.Add("Laranja");
+nomesCores.Add("Vermelho");
+nomesCores.Add("Laranja");
+nomesCores.Add("Verde");
+nomesCores.Add("Rosa");
+nomesCores.Add("Vermelho");
+nomesCores.Add("Verde");
+nomesCores.Add("Laranja");
+nomesCores.Add("Laranja");
+nomesCores.Add("Verde");
+nomesCores.Add("Laranja");
+nomesCores.Add("Verde");
+nomesCores.Add("Branco");
+nomesCores.Add("Preto");
+
+foreach (string cor in nomesCores)
+{
+    Console.WriteLine(cor);
+}
+
+Console.Write("\nDigite uma cor para buscar e contar a mesma cor repetidos: ");
+string nomeCor = Console.ReadLine();
+
+Console.WriteLine("\nA cor escolhido é: " + nomeCor);
+
+int contador = 0;
+
+foreach (string cor in nomesCores) {
+    if (cor.ToLower() == nomeCor.ToLower()) 
+    {
+        contador = contador + 1;
+    }
+}
+
+Console.WriteLine($"\nA sua cor {nomeCor} tem {contador} vezes repetidos.");
 #endregion
 
 #region 3. Gerenciador de Tarefas Simples (CRUD Básico em Memória)
